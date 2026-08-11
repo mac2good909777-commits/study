@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Study｜單一主題學習檔案庫</title>
+<meta name="description" content="每個檔案一個主題，附法條原文、決策表與自我測驗。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Noto+Sans+TC:wght@400;500;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --black:#111827; --dark:#374151; --mid:#6B7280; --light:#9CA3AF;
+  --border:#E5E7EB; --subtle:#F3F4F6; --bg:#FAFAFA; --white:#fff; --amber:#B45309;
+  --font:"Inter","Noto Sans TC","Microsoft JhengHei",sans-serif;
+  --mono:"JetBrains Mono","Consolas",monospace;
+  --radius:12px; --shadow:0 1px 3px rgba(0,0,0,.04);
+}
+@media (prefers-color-scheme: dark){
+  :root{ --bg:#111827; --white:#1F2937; --subtle:#273244; --border:#374151;
+    --dark:#D1D5DB; --mid:#9CA3AF; --light:#6B7280; --black:#F3F4F6; --amber:#FBBF24; }
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:var(--font);background:var(--bg);color:var(--mid);
+  line-height:1.8;font-size:15px;-webkit-font-smoothing:antialiased}
+.wrap{max-width:760px;margin:0 auto;padding:64px 20px 96px}
+.eyebrow{font-family:var(--mono);font-size:11px;letter-spacing:.16em;
+  color:var(--light);text-transform:uppercase;margin-bottom:12px}
+h1{font-size:28px;font-weight:600;color:var(--dark);letter-spacing:-.01em}
+.sub{font-size:14px;color:var(--mid);margin-top:12px;max-width:56ch}
+.count{font-family:var(--mono);font-size:12px;color:var(--light);
+  margin:32px 0 14px;letter-spacing:.06em}
+a.item{display:block;background:var(--white);border-radius:var(--radius);
+  box-shadow:var(--shadow);padding:22px 26px;margin-bottom:12px;
+  text-decoration:none;border:1px solid transparent;transition:border-color .15s}
+a.item:hover{border-color:var(--border)}
+.item .id{font-family:var(--mono);font-size:11px;color:var(--amber);
+  letter-spacing:.1em;margin-bottom:7px}
+.item .t{font-size:17px;font-weight:600;color:var(--dark);line-height:1.5;margin-bottom:6px}
+.item .d{font-size:13.5px;color:var(--mid);line-height:1.7}
+.item .tags{margin-top:12px;display:flex;gap:6px;flex-wrap:wrap}
+.item .tags span{font-size:11px;font-family:var(--mono);color:var(--light);
+  background:var(--subtle);padding:3px 9px;border-radius:5px}
+.note{background:var(--subtle);border-left:2px solid var(--light);border-radius:8px;
+  padding:16px 20px;margin-top:36px;font-size:13.5px}
+.note b{color:var(--dark)}
+.note code{font-family:var(--mono);font-size:12px;color:var(--amber)}
+.note ol{margin:10px 0 0 20px}
+.note li{margin-bottom:5px}
+footer{text-align:center;font-size:11px;color:var(--light);margin-top:44px;
+  padding-top:24px;border-top:1px solid var(--border);line-height:2}
+footer a{color:var(--light)}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<div class="eyebrow">Study Library</div>
+<h1>單一主題學習檔案庫</h1>
+<p class="sub">一個檔案一個主題。每篇都附<strong>法條原文擷取</strong>、決策對照表、記憶口訣與自我測驗，設計目的是<strong>讀一次能記住、需要時能查到</strong>，而不是讀完就忘的長文。</p>
+
+<div class="count">全部檔案 · 1</div>
+
+<a class="item" href="001-urban-agricultural-zone/">
+  <div class="id">STUDY 001 · 不動產稅務</div>
+  <div class="t">都市土地農業區，作為長期資產的優勢與陷阱</div>
+  <div class="d">自然人 vs 法人 × 短期 vs 長期。為什麼法人買得到、持有幾乎零稅、出場免稅要看買方是誰，以及法人在傳承端無解的死穴。含 12 題自我測驗與 9 項盡職調查清單。</div>
+  <div class="tags"><span>農業用地</span><span>法人持有</span><span>土增稅</span><span>房地合一</span><span>遺贈稅</span><span>資產配置</span></div>
+</a>
+
+<div class="note">
+  <b>新增一個主題</b>
+  <ol>
+    <li>複製 <code>_template/</code> 為 <code>0NN-主題英文短名/</code></li>
+    <li>寫 <code>index.html</code>（互動版）與 <code>README.md</code>（GitHub 閱讀版）</li>
+    <li>在本頁與根目錄 <code>README.md</code> 加一列索引</li>
+    <li><code>git add . && git commit && git push</code></li>
+  </ol>
+</div>
+
+<footer>
+  Mac Chang（張現傑）· 工業地產<br>
+  <a href="https://github.com/mac2good909777-commits/study">GitHub Repository</a>
+</footer>
+
+</div>
+</body>
+</html>

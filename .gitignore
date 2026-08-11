@@ -1,0 +1,24 @@
+# 憑證與敏感資料 — 絕不進 GitHub
+敏感憑證/
+*.pem
+*.key
+*.p12
+*credentials*
+*token*
+.env
+.env.*
+
+# 作業系統
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# 編輯器
+.vscode/
+.idea/
+*.swp
+~$*
+
+# 暫存
+*.tmp
+*.bak
