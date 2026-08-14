@@ -11,6 +11,7 @@
 
 | # | 主題 | 分類 | 建立 | 連結 |
 |---|---|---|---|---|
+| 003 | 租屋 vs 買房：台灣參數下的總持有成本與機會成本<br><sub>TCO × 機會成本正確算法 × 只還息陷阱 × 公設比坪效 × 日本 20 年實績</sub> | 個人財務／不動產 | 2026-08-14 | [📖 互動版](https://mac2good909777-commits.github.io/study/003-rent-vs-buy/) ／ [📄 Markdown](003-rent-vs-buy/README.md) |
 | 002 | 一人有限公司稅務實務：發票、擴大書審、資金合法動用<br><sub>速查表在最前面 · 進項扣抵 vs 列費用 · 1,000 萬門檻</sub> | 公司稅務 | 2026-08-12 | [📖 互動版](https://mac2good909777-commits.github.io/study/002-corporate-tax-basics/) ／ [📄 Markdown](002-corporate-tax-basics/README.md) |
 | 001 | 都市土地農業區，作為長期資產的優勢與陷阱<br><sub>自然人 vs 法人 × 短期 vs 長期</sub> | 不動產稅務 | 2026-08-11 | [📖 互動版](https://mac2good909777-commits.github.io/study/001-urban-agricultural-zone/) ／ [📄 Markdown](001-urban-agricultural-zone/README.md) |
 
