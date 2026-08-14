@@ -8,49 +8,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Noto+Sans+TC:wght@400;500;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-<style>
-:root{
-  --black:#111827; --dark:#374151; --mid:#6B7280; --light:#9CA3AF;
-  --border:#E5E7EB; --subtle:#F3F4F6; --bg:#FAFAFA; --white:#fff; --amber:#B45309;
-  --font:"Inter","Noto Sans TC","Microsoft JhengHei",sans-serif;
-  --mono:"JetBrains Mono","Consolas",monospace;
-  --radius:12px; --shadow:0 1px 3px rgba(0,0,0,.04);
-}
-@media (prefers-color-scheme: dark){
-  :root{ --bg:#111827; --white:#1F2937; --subtle:#273244; --border:#374151;
-    --dark:#D1D5DB; --mid:#9CA3AF; --light:#6B7280; --black:#F3F4F6; --amber:#FBBF24; }
-}
-*{box-sizing:border-box;margin:0;padding:0}
-body{font-family:var(--font);background:var(--bg);color:var(--mid);
-  line-height:1.8;font-size:15px;-webkit-font-smoothing:antialiased}
-.wrap{max-width:760px;margin:0 auto;padding:64px 20px 96px}
-.eyebrow{font-family:var(--mono);font-size:11px;letter-spacing:.16em;
-  color:var(--light);text-transform:uppercase;margin-bottom:12px}
-h1{font-size:28px;font-weight:600;color:var(--dark);letter-spacing:-.01em}
-.sub{font-size:14px;color:var(--mid);margin-top:12px;max-width:56ch}
-.count{font-family:var(--mono);font-size:12px;color:var(--light);
-  margin:32px 0 14px;letter-spacing:.06em}
-a.item{display:block;background:var(--white);border-radius:var(--radius);
-  box-shadow:var(--shadow);padding:22px 26px;margin-bottom:12px;
-  text-decoration:none;border:1px solid transparent;transition:border-color .15s}
-a.item:hover{border-color:var(--border)}
-.item .id{font-family:var(--mono);font-size:11px;color:var(--amber);
-  letter-spacing:.1em;margin-bottom:7px}
-.item .t{font-size:17px;font-weight:600;color:var(--dark);line-height:1.5;margin-bottom:6px}
-.item .d{font-size:13.5px;color:var(--mid);line-height:1.7}
-.item .tags{margin-top:12px;display:flex;gap:6px;flex-wrap:wrap}
-.item .tags span{font-size:11px;font-family:var(--mono);color:var(--light);
-  background:var(--subtle);padding:3px 9px;border-radius:5px}
-.note{background:var(--subtle);border-left:2px solid var(--light);border-radius:8px;
-  padding:16px 20px;margin-top:36px;font-size:13.5px}
-.note b{color:var(--dark)}
-.note code{font-family:var(--mono);font-size:12px;color:var(--amber)}
-.note ol{margin:10px 0 0 20px}
-.note li{margin-bottom:5px}
-footer{text-align:center;font-size:11px;color:var(--light);margin-top:44px;
-  padding-top:24px;border-top:1px solid var(--border);line-height:2}
-footer a{color:var(--light)}
-</style>
+<link rel="stylesheet" href="assets/study.css">
 </head>
 <body>
 <div class="wrap">
@@ -59,7 +17,21 @@ footer a{color:var(--light)}
 <h1>單一主題學習檔案庫</h1>
 <p class="sub">一個檔案一個主題。每篇都附<strong>法條原文擷取</strong>、決策對照表、記憶口訣與自我測驗，設計目的是<strong>讀一次能記住、需要時能查到</strong>，而不是讀完就忘的長文。</p>
 
-<div class="count">全部檔案 · 3</div>
+<div class="count">全部檔案 · 5</div>
+
+<a class="item" href="005-senior-rental-market/">
+  <div class="id">STUDY 005 · 產業機會</div>
+  <div class="t">高齡租住服務：日本對標與台灣切入評估</div>
+  <div class="d">「有錢的老人租得到，卡住的是弱勢老人」——這是門巨大生意嗎？日本租金保證市場 2,549 億円的啟示：金融環不巨大（台灣天花板 25~40 億／年），資產環才巨大（65% 租約在 30 年老屋、高齡宅僅 6,763 戶對上 480 萬老人）。含日本六環節獲利拆解、三個放大器、三個陷阱與四段切入排序。</div>
+  <div class="tags"><span>高齡租屋</span><span>租金保證</span><span>日本對標</span><span>包租代管</span><span>凶宅套利</span><span>銀髮宅</span></div>
+</a>
+
+<a class="item" href="004-beitun-case/">
+  <div class="id">STUDY 004 · 案例研究</div>
+  <div class="t">案例：一間北屯自宅的持有／出售決策全紀錄</div>
+  <div class="d">把 Study 003 的算法套進真實案例。只還息 13 年的房貸如何讓「強迫儲蓄」優勢歸零、93% 的資產集中度、三方案 20 年對照與敏感度、配偶的兩個互斥願望、感性帳的定價（每月 3 萬安全感保費），以及我原本算錯的稅務結論。含五條認知的數據檢驗與待辦清單。</div>
+  <div class="tags"><span>決策紀錄</span><span>只還息</span><span>資產集中度</span><span>沉沒成本</span><span>坪效</span><span>核實課稅</span><span>家庭協商</span></div>
+</a>
 
 <a class="item" href="003-rent-vs-buy/">
   <div class="id">STUDY 003 · 個人財務／不動產</div>

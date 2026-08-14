@@ -1,0 +1,236 @@
+/* ============================================================
+   Study — 單一主題學習檔案庫 共用樣式
+   Mobile-first。基準螢幕 360px（Pixel Fold 外螢幕），
+   展開態 ~700px 與桌機以 min-width 漸進放大。
+   規範：任何文字不小於 14px。
+   ============================================================ */
+
+:root{
+  --black:#111827; --charcoal:#1F2937; --dark:#374151; --mid:#4B5563;
+  --light:#6B7280; --border:#E5E7EB; --subtle:#F3F4F6; --bg:#FAFAFA; --white:#fff;
+  --up:#047857; --down:#B91C1C; --amber:#92400E; --amber-mid:#B45309;
+  --font:"Inter","Noto Sans TC","Microsoft JhengHei",sans-serif;
+  --mono:"JetBrains Mono","Consolas",monospace;
+  --radius:12px; --shadow:0 1px 3px rgba(0,0,0,.04);
+  --pad:18px;
+}
+@media (prefers-color-scheme: dark){
+  :root{ --bg:#111827; --white:#1F2937; --subtle:#273244; --border:#3A4657;
+    --dark:#E5E7EB; --mid:#C3CAD5; --light:#96A0AE; --black:#F9FAFB; --charcoal:#E5E7EB;
+    --up:#34D399; --down:#F87171; --amber:#FBBF24; --amber-mid:#FCD34D; }
+}
+
+*{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:100%}
+body{font-family:var(--font);background:var(--bg);color:var(--mid);
+  line-height:1.8;font-size:16px;-webkit-font-smoothing:antialiased;
+  overflow-wrap:break-word;word-break:break-word}
+.wrap{max-width:880px;margin:0 auto;padding:28px 16px 72px}
+
+/* ---------- Header ---------- */
+header{margin-bottom:28px}
+.eyebrow{font-family:var(--mono);font-size:14px;letter-spacing:.1em;
+  color:var(--light);text-transform:uppercase;margin-bottom:10px;line-height:1.5}
+h1{font-size:24px;font-weight:600;color:var(--dark);line-height:1.4;letter-spacing:-.01em}
+.sub{font-size:16px;color:var(--mid);margin-top:12px;line-height:1.7}
+.meta{font-size:14px;color:var(--light);margin-top:14px;font-family:var(--mono);line-height:1.6}
+.back{display:inline-block;font-size:15px;font-family:var(--mono);
+  color:var(--light);margin-bottom:18px;padding:6px 0}
+
+/* ---------- Cards ---------- */
+.card{background:var(--white);border-radius:var(--radius);box-shadow:var(--shadow);
+  padding:22px var(--pad);margin-bottom:16px}
+h2{font-size:20px;font-weight:600;color:var(--dark);margin-bottom:8px;
+  letter-spacing:-.01em;line-height:1.45}
+h2 .n{font-family:var(--mono);font-size:14px;color:var(--light);
+  margin-right:9px;font-weight:500}
+h3{font-size:17px;font-weight:600;color:var(--dark);margin:24px 0 10px;line-height:1.5}
+.lead{font-size:15px;color:var(--light);margin-bottom:18px;line-height:1.7}
+p{margin-bottom:14px}
+strong{color:var(--black);font-weight:600}
+em{color:var(--amber);font-style:normal;font-weight:600}
+ul,ol{margin:0 0 14px 20px}
+li{margin-bottom:9px}
+sub{font-size:14px;line-height:1.5;display:inline-block;vertical-align:baseline}
+a{color:var(--amber-mid);text-decoration:none;border-bottom:1px solid transparent}
+a:hover{border-bottom-color:var(--amber-mid)}
+hr{border:0;border-top:1px solid var(--border);margin:24px 0}
+code{font-family:var(--mono);font-size:14px;color:var(--amber-mid)}
+
+/* ---------- Tables ---------- */
+/* 窄螢幕時滿版出血，讓表格拿到最大可用寬度，並顯示可捲動陰影 */
+.tw{overflow-x:auto;margin:16px calc(var(--pad) * -1) 10px;
+  padding:0 var(--pad);-webkit-overflow-scrolling:touch;
+  background:
+    linear-gradient(to right, var(--white) 24px, rgba(255,255,255,0)),
+    linear-gradient(to left,  var(--white) 24px, rgba(255,255,255,0)) 100% 0,
+    radial-gradient(farthest-side at 0 50%, rgba(0,0,0,.10), rgba(0,0,0,0)),
+    radial-gradient(farthest-side at 100% 50%, rgba(0,0,0,.10), rgba(0,0,0,0)) 100% 0;
+  background-repeat:no-repeat;
+  background-size:48px 100%, 48px 100%, 16px 100%, 16px 100%;
+  background-attachment:local, local, scroll, scroll}
+table{width:100%;border-collapse:collapse;font-size:15px;min-width:420px;line-height:1.65}
+th{text-align:left;color:var(--dark);font-weight:600;padding:10px 12px;
+  border-bottom:1px solid var(--border);font-size:15px;line-height:1.5}
+td{padding:11px 12px;border-bottom:1px solid var(--subtle);
+  vertical-align:top;color:var(--mid)}
+td:first-child{color:var(--dark);font-weight:500}
+.yes{color:var(--up);font-weight:600}
+.no{color:var(--down);font-weight:600}
+.warn{color:var(--amber-mid);font-weight:600}
+.num{font-family:var(--mono);font-size:14.5px}
+
+/* ---------- Callout ---------- */
+.call{background:var(--subtle);border-left:3px solid var(--light);border-radius:8px;
+  padding:15px 16px;margin:16px 0;font-size:15.5px;line-height:1.75}
+.call.key{border-left-color:var(--amber-mid)}
+.call.danger{border-left-color:var(--down)}
+.call .t{display:block;font-size:14px;font-family:var(--mono);letter-spacing:.08em;
+  text-transform:uppercase;color:var(--light);margin-bottom:7px;line-height:1.5}
+
+/* ---------- Law block ---------- */
+details.law{background:var(--subtle);border-radius:8px;margin:14px 0;overflow:hidden}
+details.law summary{cursor:pointer;padding:14px 16px;font-size:15px;color:var(--dark);
+  font-weight:500;list-style:none;display:flex;align-items:flex-start;gap:10px;
+  user-select:none;line-height:1.6;flex-wrap:wrap}
+details.law summary::-webkit-details-marker{display:none}
+details.law summary::before{content:"§";font-family:var(--mono);color:var(--amber-mid);
+  font-weight:600;font-size:17px;flex:none}
+details.law summary::after{content:"展開 ▾";margin-left:auto;font-size:14px;
+  color:var(--light);font-family:var(--mono);white-space:nowrap;flex:none}
+details.law[open] summary::after{content:"收合 ▴"}
+details.law .body{padding:0 16px 16px 16px}
+.quote{font-size:15px;color:var(--dark);line-height:2;background:var(--white);
+  border-radius:6px;padding:14px 15px;border:1px solid var(--border)}
+.quote .p{display:block;margin-bottom:10px}
+.quote .p:last-child{margin-bottom:0}
+.src{font-size:14px;font-family:var(--mono);color:var(--light);
+  margin-top:10px;line-height:1.6}
+
+/* ---------- KPI ---------- */
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));
+  gap:10px;margin:18px 0}
+.kpi{background:var(--subtle);border-radius:var(--radius);padding:15px 16px}
+.kpi .v{font-size:24px;font-weight:600;color:var(--black);
+  line-height:1.25;font-family:var(--mono)}
+.kpi .l{font-size:14px;color:var(--light);margin-top:6px;line-height:1.5}
+
+/* ---------- Mnemonic ---------- */
+.mn{display:grid;gap:10px;margin:16px 0}
+.mn .row{background:var(--subtle);border-radius:8px;padding:14px 16px}
+.mn .k{font-size:17px;font-weight:700;color:var(--black);
+  letter-spacing:.03em;margin-bottom:6px;line-height:1.5}
+.mn .d{font-size:15px;line-height:1.75}
+.mn .d b{color:var(--dark)}
+
+/* ---------- Quiz ---------- */
+.q{background:var(--subtle);border-radius:8px;margin-bottom:10px;overflow:hidden}
+.q .qq{padding:15px 16px;cursor:pointer;font-size:15.5px;color:var(--dark);
+  font-weight:500;display:flex;gap:10px;user-select:none;line-height:1.65}
+.q .qq .num{font-family:var(--mono);color:var(--light);font-size:14.5px;
+  flex:none;padding-top:1px}
+.q .aa{display:none;padding:14px 16px 16px 16px;font-size:15px;color:var(--mid);
+  border-top:1px solid var(--border);line-height:1.8}
+.q.open .aa{display:block}
+.q .aa .tag{display:inline-block;font-family:var(--mono);font-size:14px;
+  background:var(--white);color:var(--amber-mid);padding:3px 9px;border-radius:4px;
+  margin-bottom:9px;border:1px solid var(--border)}
+.qbar{display:flex;gap:8px;margin-bottom:14px;flex-wrap:wrap}
+.btn{font-family:var(--font);font-size:15px;color:var(--mid);background:var(--white);
+  border:1px solid var(--border);border-radius:8px;padding:9px 16px;cursor:pointer;
+  min-height:44px}
+.btn:hover{color:var(--dark);border-color:var(--light)}
+
+/* ---------- Map / steps ---------- */
+.map{display:grid;gap:9px;margin:16px 0}
+.map .step{display:grid;grid-template-columns:30px 1fr;gap:12px;align-items:start;
+  padding:13px 15px;background:var(--subtle);border-radius:8px}
+.map .step .i{font-family:var(--mono);font-size:14px;color:var(--amber-mid);
+  font-weight:600;padding-top:2px}
+.map .step .t{font-size:15px;line-height:1.75}
+.map .step .t b{color:var(--dark);display:block;margin-bottom:4px;font-size:16px}
+
+/* ---------- Grid 2col ---------- */
+.g2{display:grid;grid-template-columns:1fr;gap:14px;margin:16px 0}
+.box{background:var(--subtle);border-radius:var(--radius);padding:17px 18px}
+.box h4{font-size:16px;font-weight:600;color:var(--dark);margin-bottom:10px;line-height:1.5}
+.box.good h4{color:var(--up)}
+.box.bad h4{color:var(--down)}
+.box ul{margin:0 0 0 18px;font-size:15px}
+.box li{margin-bottom:8px;line-height:1.7}
+
+/* ---------- TOC ---------- */
+nav.toc{background:var(--white);border-radius:var(--radius);box-shadow:var(--shadow);
+  padding:18px var(--pad);margin-bottom:16px}
+nav.toc ol{margin:0 0 0 20px;font-size:15px;columns:1}
+nav.toc li{margin-bottom:8px;break-inside:avoid;line-height:1.6}
+
+/* ---------- Index page（根目錄） ---------- */
+.count{font-family:var(--mono);font-size:14px;color:var(--light);
+  margin:28px 0 14px;letter-spacing:.05em}
+a.item{display:block;background:var(--white);border-radius:var(--radius);
+  box-shadow:var(--shadow);padding:20px var(--pad);margin-bottom:12px;
+  text-decoration:none;border:1px solid transparent;transition:border-color .15s}
+a.item:hover{border-color:var(--border)}
+.item .id{font-family:var(--mono);font-size:14px;color:var(--amber-mid);
+  letter-spacing:.08em;margin-bottom:8px;line-height:1.5}
+.item .t{font-size:18px;font-weight:600;color:var(--dark);
+  line-height:1.5;margin-bottom:8px}
+.item .d{font-size:15px;color:var(--mid);line-height:1.75}
+.item .tags{margin-top:12px;display:flex;gap:7px;flex-wrap:wrap}
+.item .tags span{font-size:14px;font-family:var(--mono);color:var(--light);
+  background:var(--subtle);padding:4px 10px;border-radius:5px;line-height:1.5}
+.note{background:var(--subtle);border-left:3px solid var(--light);border-radius:8px;
+  padding:16px 18px;margin-top:32px;font-size:15px;line-height:1.75}
+.note b{color:var(--dark)}
+.note ol{margin:10px 0 0 20px}
+.note li{margin-bottom:7px}
+
+/* ---------- Footer ---------- */
+footer{text-align:center;font-size:14px;color:var(--light);margin-top:36px;
+  padding-top:22px;border-top:1px solid var(--border);line-height:2}
+footer a{color:var(--light)}
+
+/* ============================================================
+   ≥ 480px — Fold 外螢幕橫向／較大手機
+   ============================================================ */
+@media (min-width:480px){
+  :root{ --pad:22px; }
+  .wrap{padding:36px 20px 84px}
+  .kpis{grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px}
+}
+
+/* ============================================================
+   ≥ 700px — Fold 展開態／平板
+   ============================================================ */
+@media (min-width:700px){
+  :root{ --pad:26px; }
+  body{font-size:16px}
+  .wrap{padding:44px 22px 90px}
+  h1{font-size:27px}
+  h2{font-size:21px}
+  .card{padding:26px var(--pad)}
+  .g2{grid-template-columns:1fr 1fr;gap:16px}
+  nav.toc ol{columns:2;column-gap:28px}
+  .mn .row{display:grid;grid-template-columns:100px 1fr;gap:16px;align-items:start}
+  .mn .k{margin-bottom:0}
+  table{min-width:520px}
+}
+
+/* ============================================================
+   ≥ 900px — 桌機
+   ============================================================ */
+@media (min-width:900px){
+  .wrap{padding:52px 24px 96px}
+  h1{font-size:29px}
+}
+
+/* ---------- 列印 ---------- */
+@media print{
+  body{background:#fff;font-size:11pt}
+  .card,nav.toc{box-shadow:none;border:1px solid #ddd;break-inside:avoid}
+  .back,.qbar{display:none}
+  .q .aa{display:block !important}
+  details.law{border:1px solid #ddd}
+  details.law .body{display:block !important}
+}
