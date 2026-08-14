@@ -1,8 +1,8 @@
-# Study 001｜都市土地農業區，作為長期資產的優勢與陷阱
+# 都市土地農業區，作為長期資產的優勢與陷阱
 
 > 自然人 vs 法人 × 短期持有 vs 長期持有
 > 建立日期：2026-08-11 ／ 法條依現行有效版本
-> 📖 **[互動版學習檔案（含自我測驗）→](https://mac2good909777-commits.github.io/study/001-urban-agricultural-zone/)**
+> 📖 **[互動版學習檔案（含自我測驗）→](https://mac2good909777-commits.github.io/study/urban-agricultural-zone/)**
 
 ---
 

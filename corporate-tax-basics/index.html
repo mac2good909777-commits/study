@@ -1,0 +1,820 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>一人有限公司稅務實務 — 發票、書審、資金動用</title>
+<meta name="description" content="一人有限公司負責人的稅務入門：發票進項與費用認列、擴大書審門檻、資金合法動用管道。附速查表與法條原文。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Noto+Sans+TC:wght@400;500;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/study.css">
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <div class="eyebrow">公司稅務</div>
+  <h1>一人有限公司稅務實務：發票、擴大書審、資金合法動用</h1>
+  <p class="sub">以不動產／工業地產仲介顧問業（年營收 900–1,200 萬、一人公司）為情境。速查表在最前面，觀念在後面。</p>
+  <div class="meta">2026-08-12 ／ 速查表 5 分鐘・全文約 25 分鐘 ／ 法條依現行有效版本</div>
+</header>
+
+<!-- ============ 速查表 ============ -->
+<section class="card hi" id="cheat">
+  <h2><span class="n">速查</span>速查表（先看這裡）</h2>
+  <p class="lead">五張表。看完這五張，八成的日常判斷都能自己做。</p>
+
+  <h3>表 1 ｜ 我的關鍵數字</h3>
+  <div class="kpis">
+    <div class="kpi alert"><div class="v">1,000萬</div><div class="l">不動產仲介的書審門檻<br>（不是 3,000 萬）</div></div>
+    <div class="kpi"><div class="v">10%</div><div class="l">擴大書審純益率</div></div>
+    <div class="kpi alert"><div class="v">11%</div><div class="l">同業利潤標準淨利率<br>（帳證不全時被推計用）</div></div>
+    <div class="kpi"><div class="v">20%</div><div class="l">營利事業所得稅率</div></div>
+    <div class="kpi"><div class="v">5%</div><div class="l">未分配盈餘稅<br>（按會計稅後淨利）</div></div>
+    <div class="kpi"><div class="v">5%</div><div class="l">營業稅率</div></div>
+    <div class="kpi"><div class="v">2.11%</div><div class="l">二代健保補充保費<br>（股利單次≥2萬）</div></div>
+    <div class="kpi"><div class="v">5年</div><div class="l">憑證保存＋核課期間</div></div>
+  </div>
+
+  <h3>表 2 ｜ 這張發票能認什麼</h3>
+  <div class="tw"><table>
+    <tr><th>支出項目</th><th>扣進項稅額<br><span style="font-weight:400;color:var(--light)">省營業稅 5%</span></th><th>列費用<br><span style="font-weight:400;color:var(--light)">省營所稅 20%</span></th><th>要什麼憑證</th></tr>
+    <tr class="grp"><td colspan="4">兩邊都可以　—　最理想的支出</td></tr>
+    <tr><td>辦公用品、文具、書籍</td><td class="yes">✓</td><td class="yes">✓</td><td>三聯式發票</td></tr>
+    <tr><td>廣告費（591／Google／FB）</td><td class="yes">✓</td><td class="yes">✓</td><td>三聯式發票</td></tr>
+    <tr><td>手機、網路（門號登記公司）</td><td class="yes">✓</td><td class="yes">✓</td><td>三聯式發票</td></tr>
+    <tr><td>會計師費、借址登記費</td><td class="yes">✓</td><td class="yes">✓</td><td>三聯式發票</td></tr>
+    <tr><td>公司房東的租金</td><td class="yes">✓</td><td class="yes">✓</td><td>三聯式發票</td></tr>
+    <tr><td>公司名下貨車油資、修繕</td><td class="yes">✓</td><td class="yes">✓</td><td>三聯式發票</td></tr>
+    <tr><td>電腦、設備、家具</td><td class="yes">✓</td><td class="warn">折舊</td><td>三聯式發票</td></tr>
+    <tr class="grp"><td colspan="4">只能列費用，不能扣抵　—　最多人以為「不能認」的一類</td></tr>
+    <tr><td><b>薪資</b>（含負責人自己）</td><td class="no">無發票</td><td class="yes">✓</td><td>印領清冊＋扣繳憑單</td></tr>
+    <tr><td><b>佣金給個人</b></td><td class="no">無發票</td><td class="yes">✓</td><td>收據／匯款單（載明姓名、金額、佣金）＋契約＋扣繳憑單</td></tr>
+    <tr><td>佣金給公司</td><td class="yes">✓</td><td class="yes">✓</td><td>三聯式發票</td></tr>
+    <tr><td><b>個人房東的租金</b></td><td class="no">無發票</td><td class="yes">✓</td><td>租約＋匯款證明＋扣繳憑單</td></tr>
+    <tr><td>勞健保雇主負擔</td><td class="no">無發票</td><td class="yes">✓</td><td>繳費證明</td></tr>
+    <tr><td>政府規費、謄本費</td><td class="no">✗</td><td class="yes">✓</td><td>收據</td></tr>
+    <tr><td>銀行手續費、利息</td><td class="no">✗</td><td class="yes">✓</td><td>對帳單／收據</td></tr>
+    <tr><td>招待客戶餐費、送禮</td><td class="no">✗</td><td class="warn">✓ 含稅列，有限額</td><td>發票＋註明招待對象</td></tr>
+    <tr><td>員工聚餐、尾牙、禮品</td><td class="no">✗</td><td class="yes">✓ 含稅列</td><td>發票</td></tr>
+    <tr><td>計程車、高鐵、停車（出差）</td><td class="no">✗</td><td class="yes">✓ 列旅費</td><td>票根／收據＋出差報告</td></tr>
+    <tr><td>自用小客車（9人座以下）</td><td class="no">✗</td><td class="warn">車在公司名下才可折舊</td><td>發票</td></tr>
+    <tr><td>小吃店、攤販（免用發票）</td><td class="no">✗</td><td class="warn">✓ 有限額</td><td>普通收據</td></tr>
+    <tr class="grp"><td colspan="4">兩邊都不行　—　紅線</td></tr>
+    <tr><td>私人消費開公司統編</td><td class="no">✗</td><td class="no">✗</td><td>虛列費用，刑責</td></tr>
+    <tr><td>買來的發票、無實質交易</td><td class="no">✗</td><td class="no">✗</td><td>逃漏稅捐罪</td></tr>
+  </table></div>
+
+  <div class="call key">
+    <span class="t">兩個判斷口訣</span>
+    <strong>能不能扣抵？</strong>問四題 — 是本業用嗎？是請客送禮嗎？是給員工的福利嗎？是自用小客車嗎？<br>
+    　　　　　　　第一題「是」、後三題「否」 → 可以扣。<br>
+    <strong>能不能列費用？</strong>問兩題 — 有合法憑證嗎？跟業務有關嗎？<br>
+    　　　　　　　兩題都「是」 → 可以列。<em>沒有發票也算數。</em>
+  </div>
+
+  <h3>表 3 ｜ 公司的錢，五條合法出金管道</h3>
+  <div class="tw"><table>
+    <tr><th>#</th><th>管道</th><th>公司端</th><th>個人端稅</th><th>要辦什麼</th></tr>
+    <tr><td>1</td><td><b>負責人薪資</b></td><td>列費用<br><span class="warn">書審制下不減營所稅，但降未分配盈餘稅基</span></td><td>薪資所得 5–40% 累進</td><td>每月扣繳、健保投保、次年開扣繳憑單</td></tr>
+    <tr><td>2</td><td><b>租金</b>（自有房子租給公司）</td><td>列費用</td><td class="yes">租賃所得，<b>可直接減 43%</b> 必要費用</td><td>租約、扣繳 10%＋補充保費 2.11%</td></tr>
+    <tr><td>3</td><td><b>還股東往來</b></td><td>沖銷負債</td><td class="yes"><b>完全不課稅</b>（還款非所得）</td><td>當初資金匯入要有紀錄</td></tr>
+    <tr><td>4</td><td><b>實報實銷</b></td><td>列費用</td><td class="yes"><b>完全不課稅</b></td><td>發票抬頭開公司＋統編</td></tr>
+    <tr><td>5</td><td><b>盈餘分配</b></td><td>非費用</td><td>合併計稅（8.5% 抵減上限 8 萬）或 28% 分開計稅</td><td>股東同意書、分配表、扣繳</td></tr>
+    <tr><td class="no">✗</td><td class="no">公司借錢給你</td><td colspan="3" class="no">公司法 §15 原則禁止（例外只限「公司或行號」）；所得稅法 §24-3 還要設算利息課稅</td></tr>
+  </table></div>
+
+  <h3>表 4 ｜ 每年 5 月前一定要做的三件事</h3>
+  <div class="map">
+    <div class="step"><div class="i">1</div><div class="t"><b>算出未稅營收</b>　含稅金額 ÷ 1.05。看有沒有超過 <b>1,000 萬</b> → 決定能不能用書審</div></div>
+    <div class="step"><div class="i">2</div><div class="t"><b>看財報的稅後淨利</b>　那個數字 × 5% 就是未分配盈餘稅。也是檢查帳是否真實的照妖鏡</div></div>
+    <div class="step"><div class="i">3</div><div class="t"><b>試算「今年薪資設多少、要不要分配盈餘」</b>　把個人所得控制在合理級距</div></div>
+  </div>
+
+  <h3>表 5 ｜ 紅線（碰到就是刑事責任）</h3>
+  <div class="tw"><table>
+    <tr><th>行為</th><th>法條</th><th>後果</th></tr>
+    <tr><td>明知不實而填製會計憑證或記帳（虛列費用）</td><td>商業會計法 §71</td><td class="no">5 年以下有期徒刑，併科 60 萬以下罰金。<b>負責人與記帳人員同罪</b></td></tr>
+    <tr><td>以詐術或不正當方法逃漏稅捐</td><td>稅捐稽徵法 §41</td><td class="no">5 年以下有期徒刑，併科 1,000 萬以下罰金</td></tr>
+    <tr><td>無實質交易的對開／虛開發票</td><td>營業稅法＋上述</td><td class="no">補稅＋罰鍰＋刑責</td></tr>
+    <tr><td>非經紀業而經營不動產仲介業務</td><td>不動產經紀業管理條例 §32</td><td class="warn">禁止營業＋罰 10–30 萬；經禁止仍營業 → 1 年以下有期徒刑</td></tr>
+  </table></div>
+  <div class="print">💡 這一節可直接列印貼在辦公室（列印時法條展開區與測驗會自動隱藏）</div>
+</section>
+
+<nav class="toc">
+  <ol>
+    <li><a href="#cheat">速查表</a></li>
+    <li><a href="#s1">我的處境（一頁看懂）</a></li>
+    <li><a href="#s2">三個被記錯的數字</a></li>
+    <li><a href="#s3">核心：一張發票，兩條路</a></li>
+    <li><a href="#s4">營業稅：什麼能扣抵</a></li>
+    <li><a href="#s5">營所稅：什麼能列費用</a></li>
+    <li><a href="#s6">擴大書審與 1,000 萬門檻</a></li>
+    <li><a href="#s7">98% 純益率的結構困局</a></li>
+    <li><a href="#s8">錢怎麼合法出來</a></li>
+    <li><a href="#s9">合作結構與營業項目</a></li>
+    <li><a href="#s10">兩層風險</a></li>
+    <li><a href="#s11">行動清單</a></li>
+    <li><a href="#s12">自我測驗</a></li>
+    <li><a href="#s13">法條原文總表</a></li>
+    <li><a href="#terms">名詞說明</a></li>
+  </ol>
+</nav>
+
+<div class="termlink">文中的專業術語（營業稅與營所稅的差別、進項扣抵、擴大書審、純益率…）全部整理在最後的 <a href="#terms">名詞說明</a>，看不懂隨時跳過去查。</div>
+
+<!-- 1 -->
+<section class="card" id="s1">
+  <h2><span class="n">01</span>我的處境（一頁看懂）</h2>
+  <p class="lead">先把自己的座標定出來，後面每一條規則才知道要不要套用。</p>
+
+  <div class="tw"><table>
+    <tr><th>項目</th><th>狀況</th><th>影響</th></tr>
+    <tr><td>組織型態</td><td>一人有限公司</td><td>公司是獨立法人，帳上的錢法律上不是你的</td></tr>
+    <tr><td>業務</td><td>與 A 仲介公司合作，服務客戶 B</td><td class="yes">結構合法（見第 9 節）</td></tr>
+    <tr><td>票流</td><td>A 開仲介費給 B ／ 我開顧問費給 A</td><td class="yes">單向開票，<b>不是對開發票</b></td></tr>
+    <tr><td>年營收</td><td>900–1,200 萬</td><td class="no">⚠️ 卡在 1,000 萬門檻上</td></tr>
+    <tr><td>公司成本</td><td>一年不到 15 萬</td><td class="no">⚠️ 實際純益率約 98%</td></tr>
+    <tr><td>進項發票</td><td>幾乎沒有</td><td class="yes">結構使然，正常（見第 3 節）</td></tr>
+    <tr><td>營業項目</td><td>有 I199990 其他顧問服務業<br>沒有 H704031 不動產仲介經紀業</td><td class="yes">顧問費有依據<br><span class="warn">但缺經紀業許可</span></td></tr>
+    <tr><td>健保</td><td>已在公司投保</td><td class="yes">合規</td></tr>
+  </table></div>
+
+  <div class="call key">
+    <span class="t">一句話定位</span>
+    你的<strong>交易是真的、票流是對的</strong>；問題不在「有沒有做壞事」，而在<em>公司有收入卻幾乎沒有成本，這件事在帳上要怎麼交代</em>——以及<em>營收隨時會跨過 1,000 萬那條線</em>。
+  </div>
+</section>
+
+<!-- 2 -->
+<section class="card" id="s2">
+  <h2><span class="n">02</span>三個被記錯的數字</h2>
+  <p class="lead">這三個數字，市面上流傳的版本都是錯的，而且錯得很有系統。</p>
+
+  <h3>① 門檻是 1,000 萬，不是 3,000 萬</h3>
+  <p>擴大書審一般門檻確實是 3,000 萬（要點第二點），<strong>但第九點是排除條款</strong>，把一整串行業限制在 1,000 萬——「不動產仲介」白紙黑字在裡面。多數人只讀第二點，沒讀到第九點。</p>
+
+  <details class="law">
+    <summary>擴大書面審核實施要點 第九點第（三）款</summary>
+    <div class="body">
+      <div class="quote">
+        <span class="p">（三）電力供應業；商品批發經紀業；多層次傳銷（佣金收入）；停車場管理；電視節目製作；……金融租賃；其他民間融資；財產保險經紀；人身保險經紀；其他投資顧問；土地開發；不動產投資開發；<b>不動產仲介；不動產代銷</b>；法律服務業；管理顧問業；建築、工程服務及相關技術顧問業（積體電路設計除外）；……等全年營業收入淨額及非營業收入【不包括土地及其定著物（如房屋等）之交易增益、所得稅法第四條之四規定之房屋使用權、預售屋及其坐落基地、股份或出資額之交易增益暨依法不計入所得課稅之所得額】合計在<b>新臺幣一千萬元以上</b>之申報案件。</span>
+      </div>
+      <div class="src">來源：<a href="https://law-out.mof.gov.tw/LawContent.aspx?id=GL011451" target="_blank" rel="noopener">財政部主管法規共用系統 · 擴大書面審核實施要點</a></div>
+    </div>
+  </details>
+
+  <h3>② 純益率是 10%</h3>
+  <p>要點第二點第（九）款：「不動產仲介；不動產代銷；法律服務業；管理顧問業……<strong>10%</strong>」。</p>
+
+  <h3>③ 「11%」是完全不同的東西</h3>
+  <p>台灣營所稅有三個長得很像、用途完全不同的百分比。<strong>這是最多老闆搞混的地方：</strong></p>
+  <div class="tw"><table>
+    <tr><th>數字</th><th>正式名稱</th><th>什麼時候用</th><th>性質</th></tr>
+    <tr><td>10%</td><td>擴大書審純益率</td><td>你主動選書審（營收 &lt;1,000 萬）</td><td class="yes">優惠</td></tr>
+    <tr><td>—</td><td>所得額標準</td><td>查帳申報時，申報所得率高於此 → 原則免調帳</td><td>中性</td></tr>
+    <tr><td><b>11%</b></td><td><b>同業利潤標準（淨利率）</b></td><td class="no">帳證不全、被推計課稅時，國稅局「算給你」</td><td class="no">懲罰性，且不能扣費用</td></tr>
+  </table></div>
+
+  <div class="call danger">
+    <span class="t">三個數字怎麼串起來的</span>
+    如果營收超過 1,000 萬卻仍用書審申報，被抽查發現不符條件、<strong>且帳證不齊備</strong>，國稅局會依所得稅法 §83 改按<em>同業利潤標準核定</em>——那就是 11% 出場的時刻。<br>
+    <strong>核課期間 5 年</strong>，過去的年度也在射程內。
+  </div>
+</section>
+
+<!-- 3 -->
+<section class="card" id="s3">
+  <h2><span class="n">03</span>核心：一張發票，兩條路</h2>
+  <p class="lead">這是整份文件的地基。搞懂這一節，前面的速查表就能自己看懂。</p>
+
+  <div class="call key">
+    <span class="t">一句話</span>
+    一張發票上有<strong>兩個數字</strong>，它們走<strong>兩條完全不同的路</strong>。<br>
+    「稅額」那個 → 走<em>營業稅</em>的路 → 叫「扣進項稅額」<br>
+    「銷售額」那個 → 走<em>營所稅</em>的路 → 叫「列費用」
+  </div>
+
+  <div class="inv">
+    <div class="paper">
+      <div class="row"><span>品名：筆記型電腦</span><span></span></div>
+      <div class="row a"><span>銷售額</span><span>30,000</span></div>
+      <div class="row b"><span>營業稅額</span><span>1,500</span></div>
+      <div class="row tot"><span>總計</span><span>31,500</span></div>
+    </div>
+    <div class="split">
+      <div class="lane l2">
+        <div class="h">↑ 銷售額 30,000</div>
+        <b>【列費用】</b><br>
+        走營所稅 · 每年結算<br>
+        這是你<b>真的花掉</b>的錢<br>
+        → 減少利潤 → 少繳營所稅 20%
+      </div>
+      <div class="lane l1">
+        <div class="h">↑ 稅額 1,500</div>
+        <b>【扣進項稅額】</b><br>
+        走營業稅 · 每 2 個月結算<br>
+        這是你<b>代墊給國家</b>的稅<br>
+        → 抵掉你要繳的營業稅 5%
+      </div>
+    </div>
+  </div>
+
+  <h3>為什麼那 1,500 不算「費用」？</h3>
+  <p><strong>因為你會拿回來。</strong>把它想成一個儲值金：</p>
+  <div class="call">
+    你買東西付了 <strong>1,500</strong> 的稅 → 存進「進項稅額」帳戶<br>
+    你開發票收了 <strong>5,000</strong> 的稅 → 這是你要繳給國家的<br>
+    報稅時：5,000 − 1,500 = <strong>3,500</strong> ← 你實際只要繳這麼多
+  </div>
+  <p>那 1,500 等於被你拿回來了。既然拿回來了，就不是成本。<strong>如果把 31,500 全部列費用，就重複計算了</strong>——你既抵掉了稅，又把它當成本。</p>
+
+  <h3>兩條路的算法完全不同</h3>
+  <div class="g2">
+    <div class="box">
+      <h4>營業稅（每 2 個月）</h4>
+      <div style="font-family:var(--mono);font-size:12.5px;line-height:2;color:var(--dark)">
+        銷項稅額（你收的）　50,000<br>
+        進項稅額（你付的）− 15,000<br>
+        ─────────────────<br>
+        <b>這期要繳　　　　　35,000</b>
+      </div>
+      <p style="font-size:13px;margin:10px 0 0">「稅」對「稅」相減，<b>跟賺不賺錢無關</b>。虧錢照樣要繳。</p>
+    </div>
+    <div class="box">
+      <h4>營所稅（每年）</h4>
+      <div style="font-family:var(--mono);font-size:12.5px;line-height:2;color:var(--dark)">
+        營業收入　　　9,000,000<br>
+        成本與費用　−1,500,000<br>
+        ─────────────────<br>
+        利潤　　　　　7,500,000<br>
+        <b>× 20% ＝　　1,500,000</b>
+      </div>
+      <p style="font-size:13px;margin:10px 0 0">「收入」減「費用」，<b>跟營業稅是另一套帳</b>。</p>
+    </div>
+  </div>
+
+  <h3>⭐ 最關鍵的一條規則</h3>
+  <div class="call key">
+    <strong>能扣抵的 → 費用列「未稅金額」</strong><br>
+    <strong>不能扣抵的 → 費用列「含稅金額」</strong><br><br>
+    因為不能扣抵的稅額<em>並沒有消失，它變成費用的一部分了</em>。
+  </div>
+  <div class="tw"><table>
+    <tr><th>情況</th><th>發票 31,500</th><th>扣進項</th><th>列費用</th></tr>
+    <tr><td>買電腦（可扣抵）</td><td>30,000 ＋ 1,500</td><td class="yes">1,500</td><td><b>30,000</b></td></tr>
+    <tr><td>請客吃飯（不可扣抵）</td><td>30,000 ＋ 1,500</td><td class="no">0</td><td><b>31,500</b> ← 含稅全列</td></tr>
+  </table></div>
+
+  <h3>四個實例</h3>
+  <div class="map">
+    <div class="step"><div class="i">1</div><div class="t"><b>買辦公桌 10,500</b>　銷售額 10,000 列費用 ✅／稅額 500 扣進項 ✅ →<b>兩邊都拿到</b>，最理想</div></div>
+    <div class="step"><div class="i">2</div><div class="t"><b>請客戶吃飯 3,150</b>　稅額 150 ❌ 不能扣（交際應酬用）／但 3,150 <b>含稅全額</b>列交際費 ✅（有限額）</div></div>
+    <div class="step"><div class="i">3</div><div class="t"><b>發薪水 50,000</b>　薪資不開發票，沒有進項可扣／但 50,000 <b>全額列費用</b> ✅ — 這就是「沒發票也能列」的道理</div></div>
+    <div class="step"><div class="i">4</div><div class="t"><b>買自用小客車 105 萬</b>　稅額 5 萬 ❌ 不能扣／那 5 萬<b>併入資產成本</b>，105 萬一起分年折舊</div></div>
+  </div>
+
+  <h3>為什麼規則會不一樣？</h3>
+  <div class="tw"><table>
+    <tr><th></th><th>管的法律</th><th>立法邏輯</th></tr>
+    <tr><td>扣進項稅額</td><td>營業稅法 §19</td><td>營業稅是「加值型」，只對你創造的加值課稅 → <b>只有真正投入營業的才能抵</b></td></tr>
+    <tr><td>列費用</td><td>所得稅法＋查核準則</td><td>所得稅對「淨利」課稅 → <b>只要真的花掉、跟業務有關就該減</b></td></tr>
+  </table></div>
+  <div class="call good">
+    <span class="t">記住這兩句，全部就通了</span>
+    <strong>不能扣抵的東西，不代表不能列費用。</strong><br>
+    <strong>能列費用的東西，也不一定能扣抵。</strong>
+  </div>
+</section>
+
+<!-- 4 -->
+<section class="card" id="s4">
+  <h2><span class="n">04</span>營業稅：什麼能扣抵</h2>
+
+  <details class="law">
+    <summary>加值型及非加值型營業稅法 第 19 條</summary>
+    <div class="body">
+      <div class="quote">
+        <span class="p">營業人左列進項稅額，<b>不得扣抵</b>銷項稅額：</span>
+        <span class="p">一、購進之貨物或勞務<b>未依規定取得並保存第三十三條所列之憑證</b>者。<br>
+        二、<b>非供本業及附屬業務使用</b>之貨物或勞務。但為協助國防建設、慰勞軍隊及對政府捐獻者，不在此限。<br>
+        三、<b>交際應酬用</b>之貨物或勞務。<br>
+        四、<b>酬勞員工個人</b>之貨物或勞務。<br>
+        五、<b>自用乘人小汽車</b>。</span>
+      </div>
+      <div class="src">來源：<a href="https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=G0340080&flno=19" target="_blank" rel="noopener">全國法規資料庫 · 營業稅法§19</a></div>
+    </div>
+  </details>
+
+  <h3>發票類型：能扣 vs 不能扣</h3>
+  <div class="tw"><table>
+    <tr><th>發票類型</th><th>能扣抵</th><th>說明</th></tr>
+    <tr><td>三聯式統一發票（有統編＋抬頭）</td><td class="yes">✓</td><td>標準款</td></tr>
+    <tr><td>電子發票 B2B 存證聯</td><td class="yes">✓</td><td>現在最常見，記得報統編</td></tr>
+    <tr><td>三聯式收銀機發票</td><td class="yes">✓</td><td>大賣場、加油站可要求開</td></tr>
+    <tr><td>二聯式統一發票</td><td class="no">✗</td><td>給消費者的，沒統編</td></tr>
+    <tr><td>電子發票 B2C（手機條碼）</td><td class="no">✗</td><td>存到自己載具的不算公司的</td></tr>
+    <tr><td>免用統一發票收據</td><td class="no">✗</td><td>小規模營業人開的，本來就沒稅</td></tr>
+    <tr><td>一般收據、估價單、簽帳單</td><td class="no">✗</td><td>不是合法憑證</td></tr>
+  </table></div>
+
+  <div class="call key">
+    <span class="t">最高 CP 值的一個習慣</span>
+    把統編存在<strong>手機備忘錄第一則</strong>。每次消費就說：<br>
+    「<em>開三聯式，統編 ○○○○○○○○，抬頭 ○○○○有限公司</em>」<br>
+    零成本，每 100 元支出立刻省 5 元。
+  </div>
+
+  <h3>你的營業稅實況（以營收 900 萬估算）</h3>
+  <div class="tw"><table>
+    <tr><td>全年銷項稅額（900 萬 × 5%）</td><td style="text-align:right"><b>450,000</b></td></tr>
+    <tr><td>全年進項稅額（15 萬成本 × 5%）</td><td style="text-align:right">− 7,500</td></tr>
+    <tr><td><b>全年實繳營業稅</b></td><td style="text-align:right" class="no"><b>約 442,500</b></td></tr>
+  </table></div>
+  <p>仲介顧問業最大的成本是佣金與薪資，<strong>這兩項在營業稅上都沒有進項</strong>。所以「銷項幾乎全繳」是這行的結構特性，不是你做錯什麼。</p>
+</section>
+
+<!-- 5 -->
+<section class="card" id="s5">
+  <h2><span class="n">05</span>營所稅：什麼能列費用</h2>
+  <p class="lead">原則只有兩個：① 有合法憑證　② 與業務有關。門檻比扣抵寬很多。</p>
+
+  <h3>⭐ 沒有發票也能列費用的（最容易漏掉）</h3>
+  <div class="tw"><table>
+    <tr><th>項目</th><th>憑證</th><th>對一人公司的價值</th></tr>
+    <tr><td><b>薪資</b></td><td>印領清冊＋扣繳憑單</td><td class="yes">★★★ 最大的可用空間</td></tr>
+    <tr><td><b>佣金給個人</b></td><td>收據／匯款單＋契約＋扣繳憑單</td><td class="yes">★★★ 主要成本</td></tr>
+    <tr><td><b>個人房東租金</b></td><td>租約＋扣繳憑單</td><td class="yes">★★ 若有自有房產</td></tr>
+    <tr><td>勞健保雇主負擔</td><td>繳費證明</td><td>★★</td></tr>
+    <tr><td>政府規費</td><td>收據</td><td>★</td></tr>
+    <tr><td>折舊</td><td>資產取得發票＋折舊表</td><td>★</td></tr>
+  </table></div>
+
+  <h3>兩個限額</h3>
+  <h4>① 交際費（查核準則 §80）</h4>
+  <p>服務業主要看銷貨部分：<strong>全年銷貨淨額在 3,000 萬元以下者，以不超過全年銷貨淨額千分之四點五為限。</strong></p>
+  <div class="call danger">
+    套到營收 900 萬：<strong>900 萬 × 4.5‰ ＝ 40,500 元／年</strong><br>
+    這個額度很小。超過的部分不能列，<em>而且不能改列成其他費用名目</em>——那會變成虛列。
+  </div>
+
+  <h4>② 小規模營業人的普通收據</h4>
+  <p>取得小規模營利事業出具之普通收據，全年累計金額以不超過當年度核定之製造費用及營業費用總額<strong>千分之三十（3%）</strong>為限，超過部分不予認定。</p>
+
+  <div class="src" style="margin-top:14px">
+    出處：<a href="https://law.moj.gov.tw/LawClass/LawAll.aspx?PCode=G0340051" target="_blank" rel="noopener">營利事業所得稅查核準則</a>
+    <a href="https://www.etax.nat.gov.tw/etwmain/tax-info/understanding/tax-q-and-a/national/profit-seeking-enterprise-income-tax/operating-expense-calculation/VOw72NQ" target="_blank" rel="noopener">交際費列報注意事項（財政部）</a>
+    <a href="https://www.etax.nat.gov.tw/etwmain/tax-info/understanding/tax-q-and-a/national/profit-seeking-enterprise-income-tax/operating-expense-calculation/egEqEeY" target="_blank" rel="noopener">佣金支出憑證規定（財政部）</a>
+  </div>
+</section>
+
+<!-- 6 -->
+<section class="card" id="s6">
+  <h2><span class="n">06</span>擴大書審與 1,000 萬門檻</h2>
+
+  <h3>三種申報方式</h3>
+  <div class="tw"><table>
+    <tr><th>方式</th><th>白話</th><th>適用</th></tr>
+    <tr><td>查帳申報</td><td>依實際帳目算，賺多少報多少</td><td>一般公司</td></tr>
+    <tr><td><b>擴大書審</b></td><td><b>不看實際獲利，按公告純益率算</b></td><td>營收 ≤ 3,000 萬（不動產仲介等 ≤ 1,000 萬）</td></tr>
+    <tr><td>會計師簽證</td><td>由會計師查核簽證</td><td>營收 1 億以上或有需要者</td></tr>
+  </table></div>
+
+  <h3>算法</h3>
+  <div class="call">
+    課稅所得額 ＝ 營業收入淨額 × <strong>10%</strong><br>
+    應納營所稅 ＝ 課稅所得額 × <strong>20%</strong><br>
+    → 實質稅負 ＝ <strong>營收的 2%</strong>
+  </div>
+
+  <div class="tw"><table>
+    <tr><th>年營收（未稅）</th><th>課稅所得</th><th>營所稅</th><th>能否書審</th></tr>
+    <tr><td>500 萬</td><td>50 萬</td><td>10 萬</td><td class="yes">✓</td></tr>
+    <tr><td>800 萬</td><td>80 萬</td><td>16 萬</td><td class="yes">✓</td></tr>
+    <tr><td>999 萬</td><td>99.9 萬</td><td>20 萬</td><td class="yes">✓</td></tr>
+    <tr><td><b>1,000 萬</b></td><td>—</td><td>—</td><td class="no">✗ 強制查帳</td></tr>
+  </table></div>
+
+  <div class="call danger">
+    <span class="t">容易算錯的地方</span>
+    門檻算的是「<strong>營業收入淨額</strong>」＝<em>不含營業稅</em>的金額。<br>
+    開票 1,050 萬（含稅）＝ 淨額 1,000 萬 ← 剛好卡線<br>
+    <strong>拿含稅金額去比 1,000 萬，會誤判。</strong>
+  </div>
+
+  <h3>書審划不划算：只看一條線</h3>
+  <div class="tw"><table>
+    <tr><th>你的實際純益率</th><th>該選</th></tr>
+    <tr><td>高於 10%</td><td class="yes">擴大書審，省很多</td></tr>
+    <tr><td>低於 10% 或虧損</td><td class="warn">查帳申報反而少繳（虧損還可扣抵未來 10 年）</td></tr>
+  </table></div>
+
+  <h3>三個必須知道的事實</h3>
+  <div class="tw"><table>
+    <tr><th>誤解</th><th>事實</th></tr>
+    <tr><td>書審＝不會被查</td><td>每年仍<b>抽查</b>。抽中要提示帳簿憑證</td></tr>
+    <tr><td>書審＝不用記帳、不用留憑證</td><td><b>仍須依法設帳、憑證保存 5 年</b></td></tr>
+    <tr><td>書審核定＝定案</td><td>核定後 <b>5 年內</b>發現短漏報，照樣補稅處罰</td></tr>
+  </table></div>
+
+  <div class="call danger">
+    <span class="t">兩件不能做的事</span>
+    <strong>為了壓線少開發票或延後開票</strong> → 這是真正的逃漏稅，比任何問題都嚴重。<br>
+    <strong>人為分割到第二家公司規避門檻</strong> → 實質課稅原則，關係企業會被合併認定。
+  </div>
+</section>
+
+<!-- 7 -->
+<section class="card" id="s7">
+  <h2><span class="n">07</span>98% 純益率的結構困局 ⚠️</h2>
+  <p class="lead">這一節解答「公司的錢為什麼拿不出來」——也是整份文件最重要的一段。</p>
+
+  <h3>先算實際純益率</h3>
+  <div class="tw"><table>
+    <tr><td>營業收入（未稅，假設 900 萬）</td><td style="text-align:right">9,000,000</td></tr>
+    <tr><td>借址登記 ＋ 會計師費 ＋ 勞健保</td><td style="text-align:right">− 150,000</td></tr>
+    <tr><td><b>實際稅前淨利</b></td><td style="text-align:right"><b>8,850,000</b></td></tr>
+    <tr><td><b>實際純益率</b></td><td style="text-align:right" class="warn"><b>98.3%</b></td></tr>
+  </table></div>
+
+  <div class="call good">
+    <span class="t">好消息</span>
+    在這個純益率下，<strong>擴大書審對你是天大的優惠</strong>：
+    <div class="tw" style="margin-top:8px"><table>
+      <tr><th>申報方式</th><th>課稅所得</th><th>營所稅</th></tr>
+      <tr><td>擴大書審（900 × 10%）</td><td>90 萬</td><td class="yes"><b>18 萬</b></td></tr>
+      <tr><td>查帳申報（據實 885 萬）</td><td>885 萬</td><td class="no"><b>177 萬</b></td></tr>
+    </table></div>
+    差距接近 <strong>10 倍</strong>。這就是為什麼 1,000 萬那條線對你是災難級的分水嶺。
+  </div>
+
+  <h3>⚠️ 但這裡藏著一個陷阱：未分配盈餘稅</h3>
+  <p><strong>未分配盈餘稅的計算基礎，不是課稅所得，是「會計上的稅後淨利」。</strong></p>
+
+  <details class="law">
+    <summary>所得稅法 第 66 條之 9</summary>
+    <div class="body">
+      <div class="quote">
+        <span class="p"><b>Ⅰ</b> ……自一百零七年度起，營利事業當年度之盈餘未分配者，應就該未分配盈餘加徵<b>百分之五</b>營利事業所得稅。</span>
+        <span class="p"><b>Ⅱ</b> 前項所稱未分配盈餘，指營利事業當年度<b>依商業會計法</b>、證券交易法或其他法律有關編製財務報告規定處理之<b>本期稅後淨利</b>，加計本期稅後淨利以外純益項目計入當年度未分配盈餘之數額，減除下列各款後之餘額……</span>
+      </div>
+      <div class="src">來源：<a href="https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=G0340003&flno=66-9" target="_blank" rel="noopener">全國法規資料庫 · 所得稅法§66-9</a></div>
+    </div>
+  </details>
+
+  <div class="tw"><table>
+    <tr><td>會計本期稅後淨利（900 − 15 − 18）</td><td style="text-align:right"><b>867 萬</b></td></tr>
+    <tr><td>未分配盈餘稅 5%</td><td style="text-align:right" class="no"><b>43.35 萬</b> ← 比營所稅還多</td></tr>
+  </table></div>
+
+  <h3>👉 你該問的那一個問題</h3>
+  <div class="ask">
+    <div class="n">問會計師</div>
+    <div class="qt">「我們公司的<strong>財務報表上，去年的稅後淨利是多少</strong>？」</div>
+  </div>
+
+  <div class="tw"><table>
+    <tr><th>財報上的稅後淨利</th><th>代表什麼</th></tr>
+    <tr><td>約 867 萬（接近實際）</td><td class="yes">✅ 帳是真的。每年應繳 43 萬未分配盈餘稅，且帳上累積大筆盈餘拿不出來</td></tr>
+    <tr><td>約 72 萬（接近書審課稅所得）</td><td class="no">⚠️ 財報上憑空多了約 <b>810 萬的成本費用</b>。那些費用是哪裡來的？</td></tr>
+  </table></div>
+
+  <div class="call danger">
+    <span class="t">「開出發票 8 成可以自己動用」這句話的真正來源</span>
+    <div class="map" style="margin-top:8px">
+      <div class="step"><div class="i">1</div><div class="t">900 萬全放公司，實際成本只有 15 萬</div></div>
+      <div class="step"><div class="i">2</div><div class="t">書審只課 90 萬，看起來很省</div></div>
+      <div class="step"><div class="i">3</div><div class="t">但會計帳上有 867 萬稅後盈餘 → 要繳 5%，要拿出來還要再課個人所得稅</div></div>
+      <div class="step"><div class="i">4</div><div class="t"><b>於是「帳」被做成只賺 90 萬</b> ← 那 810 萬的成本費用從哪來？</div></div>
+      <div class="step"><div class="i">5</div><div class="t">既然帳上「沒賺錢」，那 810 萬現金就「自己動用」</div></div>
+    </div>
+    <strong>要合法，只能從源頭重建——沒有辦法把一筆已經在帳上被虛化掉的錢，事後變成合法的。</strong>
+  </div>
+</section>
+
+<!-- 8 -->
+<section class="card" id="s8">
+  <h2><span class="n">08</span>錢怎麼合法出來</h2>
+  <p class="lead">只有五條管道（速查表 3 已列出）。這裡講操作細節與取捨。</p>
+
+  <h3>⭐ 書審制下領薪水的特殊性質</h3>
+  <div class="call key">
+    <strong>薪資不會降低營所稅</strong>（書審按「收入 × 10%」算，跟費用無關）<br>
+    <strong>但薪資會降低會計稅後淨利 → 直接降低未分配盈餘稅基</strong>
+  </div>
+  <div class="tw"><table>
+    <tr><th>情境（營收 900 萬）</th><th>會計稅後淨利</th><th>未分配盈餘稅 5%</th><th>當年拿到手</th></tr>
+    <tr><td>不領薪</td><td>867 萬</td><td class="no">43.4 萬</td><td class="no"><b>0 元</b></td></tr>
+    <tr><td>領薪 300 萬</td><td>567 萬</td><td>28.4 萬</td><td>300 萬（扣個人稅約 70 萬）</td></tr>
+    <tr><td>領薪 600 萬</td><td>267 萬</td><td class="yes">13.4 萬</td><td>600 萬（扣個人稅約 140 萬）</td></tr>
+  </table></div>
+  <p><strong>最優解通常是：把薪資設在讓個人綜所稅停在 20%～30% 級距的位置</strong>（課稅所得約 266 萬～498 萬），其餘留在公司或視情況分配。實際數字要用你的扣除額試算。</p>
+
+  <h3>盈餘分配：兩制擇一</h3>
+  <div class="tw"><table>
+    <tr><th>方式</th><th>怎麼算</th><th>適合</th></tr>
+    <tr><td>合併計稅</td><td>股利併入綜合所得，再按股利 × <b>8.5%</b> 抵減，每戶上限 <b>8 萬</b></td><td>綜所稅級距 5%／12%／20%</td></tr>
+    <tr><td>28% 分開計稅</td><td>股利不併入，單獨按 28% 課，不能抵減</td><td>綜所稅級距 30%／40%</td></tr>
+  </table></div>
+  <p>另加 <strong>二代健保補充保費 2.11%</strong>（股利單次給付達 2 萬元以上）。2026 年仍為「單次給付」制，衛福部規劃 <strong>2027 年改年度結算制</strong>（全年股利、利息、租金合計逾 2 萬即扣），明年要重新檢視分次發放的規劃。</p>
+
+  <h3>❌ 為什麼「公司借錢給你」不行</h3>
+  <details class="law">
+    <summary>公司法 第 15 條</summary>
+    <div class="body">
+      <div class="quote">
+        <span class="p">公司之資金，除有左列各款情形外，<b>不得貸與股東或任何他人</b>：</span>
+        <span class="p">一、公司間或與<b>行號</b>間有業務往來者。<br>
+        二、公司間或與<b>行號</b>間有短期融通資金之必要者。融資金額不得超過貸與企業淨值的百分之四十。</span>
+        <span class="p"><b>公司負責人違反前項規定時，應與借用人連帶負返還責任；如公司受有損害者，亦應由其負損害賠償責任。</b></span>
+      </div>
+      <div class="src">來源：<a href="https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=J0080001&flno=15" target="_blank" rel="noopener">全國法規資料庫 · 公司法§15</a>。兩個例外都是「公司或行號」，<b>個人股東不在裡面</b>。</div>
+    </div>
+  </details>
+  <p>而且 <a href="https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=G0340003&flno=24-3" target="_blank" rel="noopener">所得稅法 §24-3</a> 再補一刀：公司資金貸與股東未收利息或利息偏低者，<strong>應按臺灣銀行基準利率設算公司的利息收入課稅</strong>——公司沒收到錢，卻要為這筆錢繳稅。</p>
+
+  <h3>⭐ 最被忽略的一條：還股東往來</h3>
+  <p>創業時自己拿錢進公司週轉，帳上掛「股東往來」（公司欠你）。<strong>公司還你這筆錢是還債，不課任何稅。</strong>去翻帳看貸方餘額——那是你可以隨時無稅領回的錢。</p>
+</section>
+
+<!-- 9 -->
+<section class="card" id="s9">
+  <h2><span class="n">09</span>合作結構與營業項目</h2>
+
+  <h3>你的票流是對的</h3>
+  <div class="map">
+    <div class="step"><div class="i">1</div><div class="t">客戶 <b>B</b> 支付仲介費給 <b>A</b> 仲介公司</div></div>
+    <div class="step"><div class="i">2</div><div class="t"><b>A</b> 開「仲介費」發票給 <b>B</b> ✅</div></div>
+    <div class="step"><div class="i">3</div><div class="t"><b>A</b> 支付分潤佣金給你的公司</div></div>
+    <div class="step"><div class="i">4</div><div class="t">你開發票給 <b>A</b> ✅ ← 有真實勞務，<b>不開才有問題</b></div></div>
+  </div>
+
+  <div class="tw"><table>
+    <tr><th></th><th>對開發票（危險）</th><th>你的情況</th></tr>
+    <tr><td>方向</td><td>A→B <b>且</b> B→A，雙向</td><td class="yes">單向</td></tr>
+    <tr><td>真實勞務</td><td>沒有</td><td class="yes">有</td></tr>
+    <tr><td>金額</td><td>兩邊相近或相同</td><td class="yes">依實際成交價分潤</td></tr>
+    <tr><td>金流</td><td>常無實際匯款或繞回</td><td class="yes">A 真的匯錢給你</td></tr>
+  </table></div>
+
+  <div class="call good">
+    <span class="t">這也解釋了「幾乎沒有進項」</span>
+    你在這條鏈裡是<strong>末端收款方</strong>（B → A → 你），錢是往你這邊流的。<em>只有銷項、沒有進項，是結構決定的，完全正常。</em>
+  </div>
+
+  <h3>營業項目：有什麼、缺什麼</h3>
+  <div class="tw"><table>
+    <tr><th>代碼</th><th>名稱</th><th>對你的意義</th></tr>
+    <tr><td>I199990</td><td>其他顧問服務業</td><td class="yes">✅ <b>「顧問費」有登記依據</b></td></tr>
+    <tr><td>I102010</td><td>一般投資顧問業</td><td class="yes">✅</td></tr>
+    <tr><td>H701020</td><td>工業廠房開發租售業</td><td class="yes">✅ 本業</td></tr>
+    <tr><td>JZ99050</td><td>仲介服務業</td><td class="yes">✅ 一般仲介服務</td></tr>
+    <tr><td>H703090／H703100</td><td>不動產買賣業／租賃業</td><td class="yes">✅</td></tr>
+    <tr><td class="no">H704031</td><td class="no">不動產仲介經紀業</td><td class="no">❌ <b>沒有</b>，且屬<b>許可業務</b></td></tr>
+  </table></div>
+  <p style="font-size:13px;color:var(--light)">※ 代碼更正：H703110 是「老人住宅業」；不動產仲介經紀業是 <b>H704031</b>、不動產代銷經紀業是 H704041。</p>
+
+  <div class="tw"><table>
+    <tr><th>你做的事</th><th>需要 H704031＋許可</th><th>目前狀態</th></tr>
+    <tr><td>工業廠房開發／租售服務</td><td>❌ 不用（H701020 就夠）</td><td class="yes">合規</td></tr>
+    <tr><td>顧問、評估、市場分析</td><td>❌ 不用（I199990）</td><td class="yes">合規</td></tr>
+    <tr><td>一般仲介服務</td><td>❌ 不用（JZ99050）</td><td class="yes">合規</td></tr>
+    <tr><td><b>不動產居間成交、按成交價收報酬</b></td><td class="warn">✅ <b>要</b></td><td class="warn">缺口</td></tr>
+  </table></div>
+
+  <div class="call key">
+    <span class="t">關鍵</span>
+    不在你登記了什麼，而在<strong>你實際做什麼</strong>。你的登記項目讓你站在灰帶裡比較有利的位置，但如果實際上就是居間成交、按成交價收報酬，仍落在 H704031 的射程。
+  </div>
+</section>
+
+<!-- 10 -->
+<section class="card" id="s10">
+  <h2><span class="n">10</span>兩層風險</h2>
+  <p class="lead">「業務員成立公司開發票給仲介公司」在台灣很普遍——但風險有兩層，性質完全不同。</p>
+
+  <h3>層次一：不動產經紀業管理條例（地政局管）</h3>
+  <details class="law">
+    <summary>不動產經紀業管理條例 §5、§11、§22、§32</summary>
+    <div class="body">
+      <div class="quote">
+        <span class="p"><b>§5</b>　經營經紀業者，應向主管機關申請許可後，依法辦理公司或商業登記；其經營國外不動產仲介或代銷業務者，應以公司型態組織依法辦理登記為限。</span>
+        <span class="p"><b>§11</b>　經紀業設立之營業處所至少應置經紀人一人。……</span>
+        <span class="p"><b>§22</b>　不動產出租、出售委託契約書、不動產承租、承購要約書、定金收據、不動產廣告稿、不動產說明書及不動產租賃、買賣契約書<b>應由經紀業指派經紀人簽章</b>。</span>
+        <span class="p"><b>§32</b>　<b>非經紀業而經營仲介或代銷業務者，主管機關應禁止其營業，並處新臺幣十萬元以上三十萬元以下罰鍰。</b>經禁止後仍繼續營業者，處<b>一年以下有期徒刑</b>、拘役或科或併科新臺幣十萬元以上三十萬元以下罰金。</span>
+      </div>
+      <div class="src">來源：<a href="https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=D0060066" target="_blank" rel="noopener">全國法規資料庫 · 不動產經紀業管理條例</a>。另依內政部規定，仲介報酬總額<b>不得超過成交價金 6%</b>（租賃不得超過 1.5 個月租金）。</div>
+    </div>
+  </details>
+
+  <div class="call good">
+    <span class="t">你在這一層有很強的抗辯</span>
+    對外簽約、開發票給客戶 B 的是 <strong>A 公司</strong>（合法登記經紀業）；不動產說明書、委託書由 <strong>A 的經紀人簽章</strong>；你的公司<strong>沒有對外以仲介名義招攬客戶</strong>。<br>
+    ⚠️ 前提：<em>你必須真的是 A 公司備查的經紀營業員</em>。如果連營業員資格都沒有，這個抗辯就垮了。
+  </div>
+
+  <h3>層次二：實質課稅——所得該歸誰（國稅局管）⭐ 主要風險</h3>
+  <p>國稅局的角度是：<strong>這筆佣金是「你個人」提供勞務賺來的，還是「公司」賺來的？</strong></p>
+  <div class="tw"><table>
+    <tr><th>公司實質指標</th><th>一人公司常見狀況</th></tr>
+    <tr><td>有沒有其他員工？</td><td class="no">✗ 只有一人</td></tr>
+    <tr><td>有沒有實體營業場所？</td><td class="no">✗ 借址登記</td></tr>
+    <tr><td>有沒有承擔營運成本與風險？</td><td class="no">✗ 全年成本 15 萬</td></tr>
+    <tr><td>有沒有自有設備、資本投入？</td><td class="no">✗</td></tr>
+    <tr><td>工作模式是否受 A 公司指揮？</td><td class="warn">⚠️ 若要開會、遵守內規、接受派案 → 更像僱傭</td></tr>
+  </table></div>
+
+  <div class="call danger">
+    <span class="t">若被歸課個人</span>
+    <div class="tw" style="margin-top:8px"><table>
+      <tr><th></th><th>目前（公司）</th><th>若被歸課個人</th></tr>
+      <tr><td>900 萬的稅</td><td>營所稅 18 萬</td><td class="no">執行業務所得（減 20% 費用）→ 720 萬課稅 → <b>約 200 萬以上</b></td></tr>
+    </table></div>
+    <strong>這是最大的稅務敞口，遠大於經紀業條例那 10～30 萬罰鍰。</strong>
+  </div>
+
+  <h3>怎麼補強公司的「實質」</h3>
+  <ul>
+    <li><strong>領薪並在公司投保</strong>——證明公司有人事支出與雇主身分</li>
+    <li><strong>簽合作／派案協議書</strong>——證明是公司對公司的商業合作，不是個人受僱</li>
+    <li><strong>發票備註寫案件地址或案號</strong>——讓每張發票都對得回真實案件</li>
+    <li><strong>建立每案檔案夾</strong>——合作協議、成交證明、分潤計算、匯款單、發票</li>
+    <li><strong>承擔實際營運成本</strong>——廣告、差旅、設備、行銷，都由公司支付並取得發票</li>
+  </ul>
+</section>
+
+<!-- 11 -->
+<section class="card" id="s11">
+  <h2><span class="n">11</span>行動清單</h2>
+
+  <h3>今天（自己做，30 分鐘）</h3>
+  <div class="tw"><table>
+    <tr><th>#</th><th>動作</th></tr>
+    <tr><td>1</td><td>把去年營收<b>換算成未稅金額</b>（含稅 ÷ 1.05），看有沒有超過 1,000 萬</td></tr>
+    <tr><td>2</td><td>翻帳看<b>「股東往來」貸方餘額</b>——那是可無稅領回的錢</td></tr>
+    <tr><td>3</td><td>把統編存進<b>手機備忘錄第一則</b>，開始每筆消費都要三聯式</td></tr>
+    <tr><td>4</td><td>確認你是不是 <b>A 公司備查的經紀營業員</b></td></tr>
+    <tr><td>5</td><td>上 <a href="https://findbiz.nat.gov.tw/" target="_blank" rel="noopener">商工登記公示查詢</a> 再確認一次營業項目</td></tr>
+  </table></div>
+
+  <h3>這週（找會計師）— 五個問題</h3>
+  <div class="ask"><div class="n">問題 1 · 門檻</div><div class="qt">「擴大書面審核實施要點<strong>第九點第（三）款</strong>，把『不動產仲介』列在<strong>一千萬元</strong>的排除名單裡。我的營收在 900～1,200 萬之間，<strong>我到底能不能用書審？過去三年有沒有哪一年其實不能用？</strong>」</div></div>
+  <div class="ask"><div class="n">問題 2 · 帳的真實性</div><div class="qt">「我公司實際成本一年不到 15 萬，但<strong>財務報表上的稅後淨利是多少</strong>？如果報表上的成本費用遠高於 15 萬，那些費用的憑證在哪裡？<strong>未分配盈餘稅我這幾年繳了多少？</strong>」</div></div>
+  <div class="ask"><div class="n">問題 3 · 實質課稅</div><div class="qt">「如果國稅局用<strong>實質課稅原則</strong>，主張這些佣金是我個人的執行業務所得而非公司收入，<strong>我有什麼可以抗辯的？我要怎麼補強公司的營運實質？</strong>」</div></div>
+  <div class="ask"><div class="n">問題 4 · 薪資試算</div><div class="qt">「如果我開始領薪，一年薪資設多少對整體稅負最有利？請幫我算<strong>三個級距（月薪 10 萬／20 萬／30 萬）的總稅負比較</strong>，包含營所稅、未分配盈餘稅、個人綜所稅。」</div></div>
+  <div class="ask"><div class="n">問題 5 · 業務定位</div><div class="qt">「我公司登記有 <strong>I199990 其他顧問服務業</strong>，但沒有 <strong>H704031 不動產仲介經紀業</strong>。我的實際業務內容適合怎麼定位？要不要加登記或申請經紀業許可？」</div></div>
+
+  <div class="call key">
+    <span class="t">怎麼判斷會計師</span>
+    <strong>問題 1 和問題 2 的回答方式，會告訴你他是在幫你建制度，還是在幫你拖延。</strong>如果問題 2 他答不出來或閃避，你需要換一位——或至少找第二位會計師做 second opinion。
+  </div>
+
+  <h3>這個月（結構面）</h3>
+  <div class="tw"><table>
+    <tr><th>#</th><th>動作</th><th>效果</th></tr>
+    <tr><td>1</td><td><b>給自己設定薪資</b></td><td>建立最大的合法費用＋合法出金管道</td></tr>
+    <tr><td>2</td><td>跟 A 公司簽<b>合作分潤協議書</b></td><td>把「顧問費」錨定成有契約基礎的分潤</td></tr>
+    <tr><td>3</td><td>發票<b>備註欄寫案件地址或案號</b></td><td>每張發票都對得回真實案件</td></tr>
+    <tr><td>4</td><td>手機、網路門號<b>改登記公司</b></td><td>固定支出變成可扣抵費用</td></tr>
+    <tr><td>5</td><td>建立<b>每案檔案夾</b>制度</td><td>被查時直接調檔，不用解釋</td></tr>
+    <tr><td>6</td><td>評估<b>申請經紀業許可</b></td><td>消除層次一風險</td></tr>
+  </table></div>
+</section>
+
+<!-- 12 -->
+<section class="card" id="s12">
+  <h2><span class="n">12</span>自我測驗（10 題）</h2>
+  <p class="lead">點題目看答案。先自己想過再展開。</p>
+  <div class="qbar">
+    <button class="btn" onclick="document.querySelectorAll('.q').forEach(q=>q.classList.add('open'))">全部展開</button>
+    <button class="btn" onclick="document.querySelectorAll('.q').forEach(q=>q.classList.remove('open'))">全部收合</button>
+  </div>
+
+  <div class="q"><div class="qq"><span class="num">Q1</span><span>一張 31,500 元的發票，哪個數字走營業稅、哪個走營所稅？</span></div>
+    <div class="aa">銷售額 <b>30,000</b> → 走營所稅 → <b>列費用</b>（減少利潤）。<br>稅額 <b>1,500</b> → 走營業稅 → <b>扣進項稅額</b>（抵掉要繳的營業稅）。<br>兩條路、兩種稅、兩套規則。</div></div>
+
+  <div class="q"><div class="qq"><span class="num">Q2</span><span>為什麼那 1,500 元的稅額不能算「費用」？</span></div>
+    <div class="aa">因為<b>你會拿回來</b>——它會抵掉你要繳的營業稅。既然拿回來了就不是成本。如果把 31,500 全列費用，等於既抵了稅又當成本，重複計算。</div></div>
+
+  <div class="q"><div class="qq"><span class="num">Q3</span><span>請客戶吃飯的發票 3,150 元，怎麼認？</span></div>
+    <div class="aa"><span class="tag">營業稅法 §19 三</span><br>稅額 150 <b>不能扣抵</b>（交際應酬用之貨物或勞務）。<br>但 <b>3,150 含稅全額</b>可列交際費（有限額）。<br>口訣：<b>能扣抵 → 列未稅；不能扣抵 → 列含稅。</b></div></div>
+
+  <div class="q"><div class="qq"><span class="num">Q4</span><span>發薪水 50,000 元沒有發票，能不能認？</span></div>
+    <div class="aa"><b>可以，全額列費用。</b>薪資不是「買貨物或勞務」的交易，本來就不在營業稅範圍，所以沒有進項可扣；但它確實是成本，所得稅這邊完全承認。憑證是<b>印領清冊＋扣繳憑單</b>。<br>同理：佣金給個人、個人房東租金、勞健保、規費，都是這一類。</div></div>
+
+  <div class="q"><div class="qq"><span class="num">Q5</span><span>不動產仲介的擴大書審門檻是多少？純益率多少？</span></div>
+    <div class="aa"><span class="tag">擴大書審要點 第九點（三）、第二點（九）</span><br>門檻 <b>1,000 萬</b>（不是 3,000 萬——「不動產仲介」被列在第九點（三）的排除清單）。<br>純益率 <b>10%</b>。<br>實質稅負 = 營收 × 10% × 20% = <b>營收的 2%</b>。</div></div>
+
+  <div class="q"><div class="qq"><span class="num">Q6</span><span>「11%」是什麼？什麼時候會用到？</span></div>
+    <div class="aa"><b>同業利潤標準的淨利率</b>。當營收超標仍用書審、或帳證不齊備被抽查時，國稅局依所得稅法 §83 <b>按同業利潤標準推計課稅</b>——這是懲罰性的，而且不能扣費用。<br>核課期間 <b>5 年</b>，過去年度也在射程內。</div></div>
+
+  <div class="q"><div class="qq"><span class="num">Q7</span><span>未分配盈餘稅是按「課稅所得」還是「會計稅後淨利」算？</span></div>
+    <div class="aa"><span class="tag">所得稅法 §66-9 Ⅱ</span><br>按<b>依商業會計法處理之本期稅後淨利</b>，<b>不是</b>課稅所得。<br>所以書審讓營所稅只課 90 萬，但如果會計稅後淨利是 867 萬，未分配盈餘稅就是 867 × 5% = <b>43 萬</b>——比營所稅還多。</div></div>
+
+  <div class="q"><div class="qq"><span class="num">Q8</span><span>在擴大書審制下，多領薪水能省營所稅嗎？</span></div>
+    <div class="aa"><b>不能。</b>書審按「收入 × 10%」算，跟費用完全無關。<br>但薪資<b>會降低會計稅後淨利 → 降低未分配盈餘稅基</b>（省 5%），同時是把錢合法移出公司的主要管道。<br>最優解：把薪資設在讓個人綜所稅停在 20%～30% 級距。</div></div>
+
+  <div class="q"><div class="qq"><span class="num">Q9</span><span>公司可以借錢給股東嗎？</span></div>
+    <div class="aa"><span class="tag">公司法 §15、所得稅法 §24-3</span><br><b>不行。</b>§15 兩個例外都是「公司或行號」，<b>個人股東不在裡面</b>。違反者負責人與借用人<b>連帶負返還責任</b>。<br>而且 §24-3 還要<b>設算利息</b>當公司的利息收入課稅——公司沒收到錢，卻要繳稅。</div></div>
+
+  <div class="q"><div class="qq"><span class="num">Q10</span><span>「業務員成立公司開發票給仲介公司」，最大的風險是哪一層？</span></div>
+    <div class="aa"><b>層次二：實質課稅（國稅局）</b>，不是經紀業條例。<br>若公司沒有實質（無員工、借址、幾無成本、受指揮），國稅局可主張所得應歸課個人 → 執行業務所得 → 稅負從 18 萬跳到 200 萬以上。<br>相較之下經紀業條例 §32 的罰鍰是 10～30 萬。<br><b>補強方式</b>：領薪投保、簽合作協議、發票寫案號、建檔案、由公司承擔實際營運成本。</div></div>
+</section>
+
+<!-- 13 -->
+<section class="card" id="s13">
+  <h2><span class="n">13</span>法條原文總表</h2>
+  <div class="tw"><table>
+    <tr><th>法規</th><th>條次</th><th>用途</th><th>連結</th></tr>
+    <tr><td>加值型及非加值型營業稅法</td><td>§19</td><td>不得扣抵進項稅額五款</td><td><a href="https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=G0340080&flno=19" target="_blank" rel="noopener">查看</a></td></tr>
+    <tr><td>所得稅法</td><td>§5</td><td>營所稅 20%、12 萬以下免徵</td><td><a href="https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=G0340003&flno=5" target="_blank" rel="noopener">查看</a></td></tr>
+    <tr><td>所得稅法</td><td>§66-9</td><td>未分配盈餘 5%、按會計稅後淨利</td><td><a href="https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=G0340003&flno=66-9" target="_blank" rel="noopener">查看</a></td></tr>
+    <tr><td>所得稅法</td><td>§24-3</td><td>貸與股東設算利息</td><td><a href="https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=G0340003&flno=24-3" target="_blank" rel="noopener">查看</a></td></tr>
+    <tr><td>公司法</td><td>§15</td><td>公司資金不得貸與股東</td><td><a href="https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=J0080001&flno=15" target="_blank" rel="noopener">查看</a></td></tr>
+    <tr><td>商業會計法</td><td>§71</td><td>不實憑證罪，5 年以下</td><td><a href="https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=J0080009&flno=71" target="_blank" rel="noopener">查看</a></td></tr>
+    <tr><td>稅捐稽徵法</td><td>§41</td><td>逃漏稅捐罪，5 年以下</td><td><a href="https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=G0340001&flno=41" target="_blank" rel="noopener">查看</a></td></tr>
+    <tr><td>不動產經紀業管理條例</td><td>§5·11·22·32</td><td>許可、經紀人、簽章、罰則</td><td><a href="https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=D0060066" target="_blank" rel="noopener">查看</a></td></tr>
+    <tr><td>營利事業所得稅查核準則</td><td>§80 等</td><td>交際費限額、費用認列</td><td><a href="https://law.moj.gov.tw/LawClass/LawAll.aspx?PCode=G0340051" target="_blank" rel="noopener">查看</a></td></tr>
+    <tr><td>擴大書面審核實施要點</td><td>第二點·第九點</td><td>純益率 10%、1,000 萬排除門檻</td><td><a href="https://law-out.mof.gov.tw/LawContent.aspx?id=GL011451" target="_blank" rel="noopener">查看</a></td></tr>
+    <tr><td>各業純益率／同業利潤標準</td><td>—</td><td>最新年度標準表</td><td><a href="https://www.ntbt.gov.tw/singlehtml/564aefd5ece540fdb311a46b83292574?cntId=c71b96eaa7964251814702a4ec2262c3" target="_blank" rel="noopener">查看</a></td></tr>
+    <tr><td>不動產仲介經紀業報酬計收標準</td><td>—</td><td>報酬上限 6%／1.5 個月租金</td><td><a href="https://glrs.moi.gov.tw/LawContent.aspx?id=FL053366" target="_blank" rel="noopener">查看</a></td></tr>
+    <tr><td>商工登記公示查詢</td><td>—</td><td>查自己的營業項目</td><td><a href="https://findbiz.nat.gov.tw/" target="_blank" rel="noopener">查詢</a></td></tr>
+    <tr><td>營業項目代碼檢索</td><td>—</td><td>H704031 不動產仲介經紀業</td><td><a href="https://gcis.nat.gov.tw/cod/" target="_blank" rel="noopener">查詢</a></td></tr>
+  </table></div>
+
+  <div class="call danger">
+    <span class="t">免責</span>
+    本檔為學習整理，<strong>非稅務或法律意見</strong>。純益率、限額、補充保費制度<em>逐年公告、可能調整</em>。特別是「過去年度是否適用書審有誤」涉及 <strong>5 年核課期間</strong>，以及「公司持有結構的實質課稅風險」，請務必由會計師與律師出具書面意見後再決定處理方式。法規以全國法規資料庫現行版本為準。
+  </div>
+</section>
+
+<!-- terms -->
+<section class="card" id="terms">
+  <h2><span class="n">＋</span>名詞說明</h2>
+  <p class="lead">本文出現的專業術語，一次講清楚。</p>
+  <dl class="gloss">
+
+    <div class="g"><dt>營業稅 vs 營所稅</dt>
+    <dd><strong>營業稅</strong>＝加值型消費稅，稅率 5%，<em>兩個月申報一次</em>，課的是「你這期賣了多少減掉買了多少」。<strong>營所稅</strong>＝營利事業所得稅，稅率 20%，<em>一年結算一次</em>，課的是「你這年賺了多少」。
+    <span class="eg">這是最常被搞混的一組。<b>兩種稅、兩套帳、兩個時程</b>——一張發票對這兩種稅的效果完全不同（見下）。</span></dd></div>
+
+    <div class="g"><dt>進項 vs 銷項</dt>
+    <dd><strong>進項</strong>＝你買東西時付出去的稅（拿到別人開的發票）。<strong>銷項</strong>＝你賣東西時收進來的稅（你開給別人的發票）。
+    <span class="eg">應繳營業稅 ＝ 銷項稅額 − 進項稅額。<b>進項越多，這期要繳的營業稅越少。</b></span></dd></div>
+
+    <div class="g"><dt>扣抵進項稅額 vs 列費用</dt>
+    <dd><strong>兩者是不同的稅、不同的好處，很多人混為一談。</strong>「扣抵進項稅額」是拿發票上的 5% 稅額去<em>折抵營業稅</em>；「列費用」是把支出金額計入成本費用，去<em>降低營所稅的課稅所得</em>。
+    <span class="eg">所以一張支出可能：①兩者都能 ②只能列費用不能扣抵（如二聯式發票、收據）③兩者都不行（如與業務無關的支出）。<b>拿發票前先確認你要的是哪一種好處。</b></span></dd></div>
+
+    <div class="g"><dt>統一發票（二聯式／三聯式）</dt>
+    <dd><strong>二聯式</strong>開給一般消費者，<em>不能扣抵進項稅額</em>（但通常仍可列費用）。<strong>三聯式</strong>開給營業人，載明買受人統編，<em>可以扣抵</em>。
+    <span class="eg">實務關鍵：消費時<b>報統編、要三聯式</b>，否則就只拿到一半的好處。</span></dd></div>
+
+    <div class="g"><dt>營業人</dt>
+    <dd>稅法用語，指<strong>銷售貨物或勞務的事業、機關、團體或個人</strong>——白話講就是「有在做生意、要開發票的主體」。</dd></div>
+
+    <div class="g"><dt>擴大書面審核<span class="en">擴大書審</span></dt>
+    <dd>一種<strong>簡化的營所稅申報方式</strong>：年營業額在門檻（1,000 萬）以下的小公司，只要申報的<em>純益率</em>達到財政部訂的標準（各業別不同，常見 6~10%），國稅局原則上就<strong>書面審核通過、不查帳</strong>。
+    <span class="eg">用白話說：<b>「我按這個獲利率乖乖繳稅，你就別來查我的帳」</b>——是小公司用少量稅金換取稽徵風險與記帳成本降低的機制。</span></dd></div>
+
+    <div class="g"><dt>純益率</dt>
+    <dd><strong>淨利 ÷ 營業收入</strong>，也就是「每 100 元營收賺幾元」。
+    <span class="eg">在擴大書審裡，它不是「你實際賺多少」，而是<b>「你必須申報到多少才符合免查帳的門檻」</b>。</span></dd></div>
+
+    <div class="g"><dt>課稅所得 vs 帳載所得</dt>
+    <dd><strong>帳載</strong>＝你會計帳上的數字。<strong>課稅所得</strong>＝依稅法調整後、真正用來算稅的數字。
+    <span class="eg">兩者常常不同，因為<b>有些會計上算費用的支出，稅法不認</b>（如超限的交際費、未取得合法憑證的支出）。</span></dd></div>
+
+    <div class="g"><dt>未分配盈餘（稅）</dt>
+    <dd>公司當年度稅後賺的錢，<strong>沒有分配給股東</strong>的部分，隔年要再加課 <em>5%</em> 營所稅。
+    <span class="eg">所以錢留在公司不是免費的：<b>不分配，每年多繳 5%；分配，股東要繳個人所得稅。</b>這是規劃出金路徑的核心取捨。</span></dd></div>
+
+    <div class="g"><dt>盈餘分配／股利</dt>
+    <dd>公司把賺到的錢<strong>依持股比例發給股東</strong>就是盈餘分配，發出去的錢叫股利。股東領到後要併入個人綜合所得稅（可選合併計稅抵減或 28% 分開計稅）。</dd></div>
+
+    <div class="g"><dt>設算（設算租金／設算利息）</dt>
+    <dd>即使雙方實際上沒有收錢，稅法仍<strong>「視同」有收</strong>，按市場行情推算一筆收入來課稅。
+    <span class="eg">最常見的地雷：<b>公司無償使用股東的房子、或股東無息向公司借錢</b>，國稅局都可能設算一筆收入或利息出來課稅。</span></dd></div>
+
+    <div class="g"><dt>二代健保補充保費</dt>
+    <dd>除了一般健保費外，特定所得（高額股利、執行業務所得、租金、獎金等）另按費率<strong>額外扣繳的補充保費</strong>。
+    <span class="eg">規劃出金路徑時的隱藏成本——<b>算完所得稅還要再算這一筆</b>。</span></dd></div>
+
+  </dl>
+</section>
+
+<footer>
+  張現傑（Mac Chang）· 工業地產 · 瑞禾開發／睦聚開發<br>
+  建立 2026-08-12
+</footer>
+
+</div>
+<script>
+document.querySelectorAll('.q .qq').forEach(function(el){
+  el.addEventListener('click',function(){ el.parentElement.classList.toggle('open'); });
+});
+</script>
+</body>
+</html>

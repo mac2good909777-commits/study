@@ -1,10 +1,10 @@
-# Study 003｜租屋 vs 買房 — 台灣參數下的總持有成本與機會成本
+# 租屋 vs 買房 — 台灣參數下的總持有成本與機會成本
 
 > 為什麼美國理財影片的結論不能直接搬來台灣
 > 附 TCO 拆解、機會成本正確算法、只還息陷阱、公設比坪效、法條原文與自我測驗
 >
 > 建立 2026-08-14 ／ 數據為 2026 年 8 月現況
-> 📖 [互動版（推薦）](https://mac2good909777-commits.github.io/study/003-rent-vs-buy/)
+> 📖 [互動版（推薦）](https://mac2good909777-commits.github.io/study/rent-vs-buy/)
 
 ---
 
@@ -345,7 +345,7 @@
 
 ## 14 · 自我測驗 12 題
 
-> 建議先自己想過再看答案。[互動版](https://mac2good909777-commits.github.io/study/003-rent-vs-buy/#s14)可點擊翻答案。
+> 建議先自己想過再看答案。[互動版](https://mac2good909777-commits.github.io/study/rent-vs-buy/#s14)可點擊翻答案。
 
 <details><summary><b>Q1</b> 一棟 2,000 萬的房子，30 年下來真實支出大約是多少？主要由哪些項目構成？</summary>
 
@@ -458,4 +458,4 @@
 
 ---
 
-<sub>Study 003 ／ 建立 2026-08-14 ／ Mac Chang（張現傑）· 工業地產 · [返回索引](../)</sub>
+<sub>建立 2026-08-14 ／ Mac Chang（張現傑）· 工業地產</sub>

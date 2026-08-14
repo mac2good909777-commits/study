@@ -1,8 +1,8 @@
-# Study 002｜一人有限公司稅務實務：發票、擴大書審、資金合法動用
+# 一人有限公司稅務實務：發票、擴大書審、資金合法動用
 
 > 以不動產／工業地產仲介顧問業（年營收 900–1,200 萬、一人公司）為情境
 > 建立日期：2026-08-12 ／ 法條依現行有效版本
-> 📖 **[互動版學習檔案（含自我測驗）→](https://mac2good909777-commits.github.io/study/002-corporate-tax-basics/)**
+> 📖 **[互動版學習檔案（含自我測驗）→](https://mac2good909777-commits.github.io/study/corporate-tax-basics/)**
 
 ---
 
